@@ -1,3 +1,3 @@
 # Projecte-Machine-Learning
 
-Colección de ejercicios del curso de Bussines Machine Learning IT Academy Barcelona Activa. 
+Colección de ejercicios del curso "Bussines Machine Learning" de IT Academy Barcelona Activa. 
