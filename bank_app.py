@@ -32,7 +32,7 @@ vivienda = st.selectbox('¿El cliente tiene vivienda propia?', ['yes', 'no'])
 prestamo = st.selectbox('¿El cliente tiene préstamos pendientes?', ['yes', 'no'])
 poutcome = st.selectbox('Medio de comunicación con el cliente', ['cellular', 'telephone'])
 contact = st.selectbox('Resultado del último contacto', ['success', 'nonexistent', 'failure'])
-mes = st.selectbox('Mes del año, del último contacto', ['jan', 'feb', 'mar', 'march', 'jun', 'jul', 'aug', 'oct', 'nov', 'dec'])
+mes = st.selectbox('Mes del año, del último contacto', ['jan', 'feb', 'mar', 'may', 'jun', 'jul', 'aug', 'oct', 'nov', 'dec'])
 
 # Verificaciones
 if saldo_bancario < 0:
