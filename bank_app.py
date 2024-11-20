@@ -64,13 +64,13 @@ entradas = pd.DataFrame([[edad, saldo_bancario_log, empleo, estado_civil, nivel_
 
 # 1. Codificar las variables categóricas
 categorical_columns = ['job', 'marital', 'education', 'default', 'housing', 'loan']
-encoder = OneHotEncoder(drop='first', sparse=False) 
+encoder = OneHotEncoder(drop='first', sparse_output=False)
 encoded_data = encoder.fit_transform(entradas[categorical_columns])
 
 # Convertimos a DataFrame para concatenar
 encoded_df = pd.DataFrame(encoded_data, columns=encoder.get_feature_names_out(categorical_columns))
 
-# 2. Concatenar con las columnas numéricas y otras variables
+# 2. Concatenar con las columnas numéricas
 numerical_columns = ['age', 'balance_log', 'day', 'campaign_log', 'pdays_log', 'previous_log', 'duration_log']
 entradas_numericas = entradas[numerical_columns]
 entradas_transformadas = pd.concat([entradas_numericas, encoded_df], axis=1)
