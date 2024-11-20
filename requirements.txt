@@ -1,6 +1,7 @@
 streamlit
 numpy
 pandas
-scikit-learn
+plotly.graph_objects
+sklearn.preprocessing
 plotly
 joblib
